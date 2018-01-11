@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head> 
+  <title>双列布局</title>
+  <meta name="Content-Type" content="text/css; charset=utf-8">
+	<style type="text/css">
+	  body{margin:0; padding:0;}
+	  .main{width:700px; height:900px; background:#ccc; margin:0 auto;}
+	  .main h2,ul,p{margin:0;}/*将ul p h2默认外边界归零！*/
+	  .left{width:200px;height:900px;background:#294;float:left;}
+	  .right{width:500px;float:right;background:#b7f;}
+	  .top{height:100px; background:#a27;text-align:center; }
+	  .foot{width:700px; height:100px; background:#27c; margin:0 auto; } 
+	  .hypt{margin:18px;}
+	  .hyptF{margin:3px;}
+	</style>
+ </head>
+ <body>
+ <div class="top"><h1>双列布局模型</h1></div>
+ <div class="main">
+  <div class="left">
+  <a class="hypt" href="https://www.imooc.com/code/2057" target="_blank">在线编译器</a>
+  <a class="hypt" href="https://www.baidu.com" target="_blank">百度</a>
+  <a href="https://www.zhihu.com/question/22062767" target="_blank">知乎</a>
+  <a class="hypt" href="http://yz.chsi.com.cn/" target="_blank">研究生招生信息网</a>
+  <a class="hypt" href="http://www.alloyteam.com/nav/" target="_blank">Web前端向导</a>
+  <a class="hypt" href="https://www.imooc.com/code/2057" target="_blank">智能社</a>
+  <a class="hypt" href="https://www.imooc.com/code/2057" target="_blank">Facebook</a>
+  <a class="hypt" href="https://www.imooc.com/code/2057" target="_blank">亚马逊</a>
+  <a class="hypt" href="https://www.imooc.com/code/2057" target="_blank">谷歌地球</a>
+  <a class="hypt" href="https://www.imooc.com/code/2057" target="_blank">飞鸽传书</a>
+  <a class="hypt" href="https://www.imooc.com/code/2057" target="_blank">斗鱼</a>
+  <a class="hypt" href="https://www.imooc.com/code/2057" target="_blank">恋恋有词</a>
+  </div>
+  <div class="right">
+    <ul>
+       <br><br>  
+      <li><a href="http://www.xinhuanet.com/politics/2018-01/08/c_1122228602.htm" target="_blank">习近平会见法国总统马克龙 </a></li>
+      <li><a href="http://d.news.ifeng.com/pc/special/56868/index.shtml?_zbs_baidu_news" target="_blank">新时代新气象新作为</a></li>
+      <li><a href="http://d.news.ifeng.com/pc/special/56868/index.shtml?_zbs_baidu_news" target="_blank">新时代新气象新作为</a></li>
+      <li><a href="http://review.qianlong.com/2018/0109/2312010.shtml" target="_blank">学思践悟十九大|时代出题 用心答卷</a></li>
+    </ul>
+     <br>
+     <h4>请登录！</h4>
+      <form method="post" action="baidu.php">
+        <label for="用户名">账户:</label>
+        <input type="text" name="用户" value="gonghenghan" id="用户名">
+        <input type="submit" name="subMit">
+        <br>
+        <label for="mima">密码:</label>
+        <input type="password" name="密码" id="mima">
+        <input type="reset" name="subMit">
+      </form>
+      <br>
+       <p>清楚了CSS 盒模型的基本概念、 盒模型类型， 我们就可以深入探讨网页布局的基本模型了。布局模型与盒模型一样都是 CSS 最基本、 最核心的概念。 但布局模型是建立在盒模型基础之上，又不同于我们常说的 CSS 布局样式或 CSS 布局模板。如果说布局模型是本，那么 CSS 布局模板就是末了，是外在的表现形式。</p>
+       <ul>
+       <br><br>  
+      <li><a href="http://www.xinhuanet.com/politics/2018-01/08/c_1122228602.htm" target="_blank">必须准备付出更为艰巨、艰苦的努力</a></li>
+      <li><a href="http://d.news.ifeng.com/pc/special/56868/index.shtml?_zbs_baidu_news" target="_blank">31省区市政府“一把手”全部就位 近半拥有博士学位</a></li>
+      <li><a href="http://d.news.ifeng.com/pc/special/56868/index.shtml?_zbs_baidu_news" target="_blank">寒潮黄色预警继续发布：东北华北降温10℃以上</a></li>
+      <li><a href="http://review.qianlong.com/2018/0109/2312010.shtml" target="_blank">朝鲜官方媒体发布《北南高级别会谈联合新闻公报》</a></li>
+      </ul>
+      <br>
+      <p>这三个布局模型究竟是什么布局？下面几个小节会详细给大家介绍。</p>
+      <br>
+    </div>
+ </div>
+ <div class="foot">
+     <h6>备案信息</h6><!--H6有默认margin 若不归零会有外边界-->
+  /<a class="hyptF" href="https://www.imooc.com/code/2057" target="_blank">简介</a>/
+  <a class="hyptF" href="https://www.baidu.com" target="_blank">Asina sina</a>/
+  <a class="hyptF" href="https://www.zhihu.com/question/22062767" target="_blank">广告服务</a>/
+  <a class="hyptF" href="http://yz.chsi.com.cn/" target="_blank">联系我们</a>/
+  <a class="hyptF" href="http://www.alloyteam.com/nav/" target="_blank">网站律师息</a>/
+  <a class="hyptF" href="https://www.imooc.com/code/2057" target="_blank">在线答疑</a>/
+  <a class="hyptF" href="https://www.imooc.com/code/2057" target="_blank">通行证</a>/
+ </div>
+ </body>
+</html>
