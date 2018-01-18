@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+  <meta name="Content-Type" content="text/css; charset=utf-8">
+  <style type="text/css">
+  #div1 div{width:200px; height:300px; border:1px solid black; display:none;}
+  .blue{background:blue;}
+  </style>
+  <script>
+  window.onload=function() {                            //onload函数表示加载完成执行
+	var odiv=document.getElementById('div1');            //拿出所用元素
+	var obtn=odiv.getElementsByTagName('input');
+	var adiv=odiv.getElementsByTagName('div');
+    for(var i=0;i<obtn.length;i++){//外部循环作用是为每个按钮添加”点击事件“
+			obtn[i].index=i;//给obtn[i]对象添加一个属性，方便adiv[i]对象调用
+			obtn[i].onclick=function () {//点击事件
+				for(i=0;i<obtn.length;i++){//内部循环作用是在点击事件进行时，“初始化”对象obtn[i]、adiv[i]的类型
+				obtn[i].className='';
+				adiv[i].style.display='none';
+				}
+				this.className='blue';//this为当前对象;className为css中class的变形写法，JS中class为关键字(非CSS中功能)，因此这里只能用
+									  //className;该步骤是为了给初始化后的对象添加类型
+				adiv[this.index].style.display='block';  //this指代obtn[i],是当前发生事件的对象！
+		};
+	}
+  };
+  </script>
+ </head>
+ <body>
+ <div id="div1">
+ <input type="button" value="新闻" class="blue"/>
+ <input type="button" value="娱乐"/>
+ <input type="button" value="学习"/>
+ <input type="button" value="咨询"/>
+ <div style="display:block">aaaaa....</div>
+ <div>bbbbb....</div>
+ <div>ccccc....</div>
+ <div>dddddd....</div>
+ </div>
+ </body>
+</html>

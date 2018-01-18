@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title> 卸载事件 </title>
+<script type="text/javascript">   
+     window.onunload =function onunload_message(){   
+        alert("您确定离开该网页吗？"); 
+    }   ;
+     /*语法：当无()时，函数名onunload_message代表指向函数地址的指针（代表整个函数），
+     "="表示跳转其他页面时执行的JS语句，即执行onunload_message(){}整个函数！
+当有()时，onunload_message()则代表调用后先执行函数（即先出现alert框），“=”代表执行跳转页面时执行函数的"返回值”（由于未定义返回值，返回undefine），无意义，不操作！*/  
+     
+    
+    /*可以采用这样的方法，将对象的方法同函数联系起来：对象.方法名字=函数名(函数无括号==指针)或对象.属性="值"，例：this.display=display，document.write（“this is method”）。*/
+    
+</script>   
+</head>
+<body>
+  欢迎学习JavaScript。<a href="https://www.cnblogs.com/xianyulaodi/p/5035171.html">xxx</a>
+</body>
+</html>
